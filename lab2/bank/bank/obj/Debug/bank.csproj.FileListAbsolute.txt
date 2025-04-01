@@ -1,0 +1,15 @@
+D:\4семестр\ООП\lab2\bank\bank\bin\Debug\bank.exe.config
+D:\4семестр\ООП\lab2\bank\bank\bin\Debug\bank.exe
+D:\4семестр\ООП\lab2\bank\bank\bin\Debug\bank.pdb
+D:\4семестр\ООП\lab2\bank\bank\obj\Debug\bank.csproj.AssemblyReference.cache
+D:\4семестр\ООП\lab2\bank\bank\obj\Debug\bank.Form1.resources
+D:\4семестр\ООП\lab2\bank\bank\obj\Debug\bank.Properties.Resources.resources
+D:\4семестр\ООП\lab2\bank\bank\obj\Debug\bank.csproj.GenerateResource.cache
+D:\4семестр\ООП\lab2\bank\bank\obj\Debug\bank.csproj.CoreCompileInputs.cache
+D:\4семестр\ООП\lab2\bank\bank\obj\Debug\bank.exe
+D:\4семестр\ООП\lab2\bank\bank\obj\Debug\bank.pdb
+D:\4семестр\ООП\lab2\bank\bank\bin\Debug\Newtonsoft.Json.dll
+D:\4семестр\ООП\lab2\bank\bank\bin\Debug\Newtonsoft.Json.xml
+D:\4семестр\ООП\lab2\bank\bank\obj\Debug\bank.Form2.resources
+D:\4семестр\ООП\lab2\bank\bank\obj\Debug\bank.Form3.resources
+D:\4семестр\ООП\lab2\bank\bank\obj\Debug\bank.csproj.Up2Date

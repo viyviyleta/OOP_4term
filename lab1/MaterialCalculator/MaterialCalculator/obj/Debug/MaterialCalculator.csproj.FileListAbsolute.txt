@@ -1,0 +1,10 @@
+D:\4семестр\ООП\lab1\MaterialCalculator\MaterialCalculator\bin\Debug\MaterialCalculator.exe.config
+D:\4семестр\ООП\lab1\MaterialCalculator\MaterialCalculator\bin\Debug\MaterialCalculator.exe
+D:\4семестр\ООП\lab1\MaterialCalculator\MaterialCalculator\bin\Debug\MaterialCalculator.pdb
+D:\4семестр\ООП\lab1\MaterialCalculator\MaterialCalculator\obj\Debug\MaterialCalculator.csproj.AssemblyReference.cache
+D:\4семестр\ООП\lab1\MaterialCalculator\MaterialCalculator\obj\Debug\MaterialCalculator.Properties.Resources.resources
+D:\4семестр\ООП\lab1\MaterialCalculator\MaterialCalculator\obj\Debug\MaterialCalculator.csproj.GenerateResource.cache
+D:\4семестр\ООП\lab1\MaterialCalculator\MaterialCalculator\obj\Debug\MaterialCalculator.csproj.CoreCompileInputs.cache
+D:\4семестр\ООП\lab1\MaterialCalculator\MaterialCalculator\obj\Debug\MaterialCalculator.exe
+D:\4семестр\ООП\lab1\MaterialCalculator\MaterialCalculator\obj\Debug\MaterialCalculator.pdb
+D:\4семестр\ООП\lab1\MaterialCalculator\MaterialCalculator\obj\Debug\MaterialCalculator.Form1.resources

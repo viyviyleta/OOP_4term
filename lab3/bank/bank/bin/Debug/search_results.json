@@ -1,0 +1,47 @@
+[
+  {
+    "Number": "1234-5678-9012",
+    "DepositType": "Бессрочный",
+    "balance": 500.0,
+    "OpenTime": "2025-02-20T10:30:00+03:00",
+    "owner": {
+      "Name": "Иванов Иван Иванович",
+      "birthDay": "1995-06-15T00:00:00",
+      "passport": "AB1234567"
+    },
+    "smsNotific": true,
+    "internetBank": true,
+    "transactions": [
+      {
+        "type": "Пополнение",
+        "Amount": 200.0,
+        "Date": "2025-02-21T12:00:00+03:00"
+      },
+      {
+        "type": "Снятие",
+        "Amount": 100.0,
+        "Date": "2025-02-22T15:45:00+03:00"
+      }
+    ]
+  },
+  {
+    "Number": "1111-2222-3333",
+    "DepositType": "Бессрочный",
+    "balance": 168.0,
+    "OpenTime": "2025-02-26T14:45:08.3922044+03:00",
+    "owner": {
+      "Name": "Иванов Иван Иванович",
+      "birthDay": "2000-02-25T00:00:00",
+      "passport": "AS1111111"
+    },
+    "smsNotific": false,
+    "internetBank": true,
+    "transactions": [
+      {
+        "type": "Перевод средств",
+        "Amount": 45.0,
+        "Date": "2025-02-26T14:45:42.1163021+03:00"
+      }
+    ]
+  }
+]
