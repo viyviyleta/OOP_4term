@@ -1,0 +1,101 @@
+﻿<Window x:Class="_8lab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_8lab"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="800" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <Border HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 5 0 0" Background="DarkGreen" Visibility="Visible" Padding="5" CornerRadius="5">
+            <TabControl Height="250" Width="700" Foreground="Black" FontSize="14">
+
+                <TabItem Header="Добавить лошадь">
+                    <Grid Background="LightYellow">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">
+                            <TextBlock Text="Имя лошади" Margin="3" Foreground="Black" FontWeight="Bold"></TextBlock>
+                            <TextBox x:Name="Name_Container" Margin="3" PreviewTextInput="Name_Container_PreviewTextInput" MaxLength="40"></TextBox>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="1" VerticalAlignment="Center">
+                            <TextBlock Text="Тип лошади" Margin="3" Foreground="Black" FontWeight="Bold"></TextBlock>
+                            <ComboBox x:Name="Type_Container" Margin="3" SelectedIndex="0">
+                                <ComboBoxItem Content="лошадь"/>
+                                <ComboBoxItem Content="пони"/>
+                                <ComboBoxItem Content="осёл"/>
+                            </ComboBox>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="2" VerticalAlignment="Center">
+                            <TextBlock Text="Фото" Margin="3" Foreground="Black" FontWeight="Bold"></TextBlock>
+                            <TextBox x:Name="Photo_Container" Margin="3" MaxLength="200" PreviewTextInput="Photo_Container_PreviewTextInput"></TextBox>
+                        </StackPanel>
+
+                        <Button x:Name="Create" Height="35" Margin="0 10 0 0" Content="Создать запись" Grid.Row="1" Grid.Column="1"
+                                   Background="LawnGreen" FontWeight="Bold" Click="Create_Click"></Button>
+                        <Button x:Name="Edit" Height="35" Margin="0 10 0 0" Content="Изменить запись" Grid.Row="2" Grid.Column="1"
+                                Background="LightBlue" FontWeight="Bold" Click="Edit_Click"></Button>
+
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="Удаление Лошади">
+                    <Grid Background="AntiqueWhite">
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock Text="Введите имя для удаления" FontSize="24" FontWeight="SemiBold"></TextBlock>
+                            <TextBox x:Name="NumToDelete" Margin="0 15 0 0" Width="300" FontSize="24" MaxLength="15"
+                                     PreviewTextInput="NumToDelete_PreviewTextInput"></TextBox>
+                            <Button x:Name="Delete" Margin="0 15 0 0" Height="40" Width="250" Background="DarkCyan"
+                                    Content="Удалить" FontSize="24" FontWeight="Bold" Click="Delete_Click"></Button>
+                        </StackPanel>
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="Сортировка">
+                    <Grid Background="LightBlue">
+                        <TextBlock Text="Сортировать по:" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 30 0 0"></TextBlock>
+                        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20 0 0">
+                            <Button x:Name="SortByName" Height="40" Width="210" Margin="0 0 0 0"  Background="DarkGoldenrod" Foreground="WhiteSmoke"
+                                    Content="По Имени" FontSize="20" Click="SortByNum_Click" FontWeight="Bold"></Button>
+                        </StackPanel>
+
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="Вывод">
+                    <Grid Background="LightPink">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="13*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="20,0,0,0" Grid.Column="1">
+                            <Button x:Name="Show_all" Grid.Column="0" Height="50" Width="240" Content="Вывести всех" Background="Azure" FontWeight="SemiBold"
+                                    FontSize="24" Click="Show_all_Click" Margin="25" BorderBrush="DarkOliveGreen" BorderThickness="3"></Button>
+                            <Button x:Name="Show_Horse"   Grid.Column="1" Height="50" Width="240" Content="Вывести лошадей" Background="Azure" FontWeight="SemiBold"
+                                    FontSize="24" Click="Show_all_Horse_Click" Margin="25" BorderBrush="DarkOliveGreen" BorderThickness="3"></Button>
+                        </StackPanel>
+                    </Grid>
+                </TabItem>
+
+
+
+            </TabControl>
+        </Border>
+        <StackPanel Margin="0 290 0 0">
+            <TextBlock Text="Результаты" HorizontalAlignment="Center" FontWeight="Bold" FontSize="20" Foreground="Black"/>
+            <DataGrid x:Name="dgResults" 
+                      HorizontalAlignment="Center" FontSize="14" IsReadOnly="True" Margin="0 10 0 0"
+                  AutoGenerateColumns="True" Height="380" Width="760" CanUserSortColumns="False">
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>
